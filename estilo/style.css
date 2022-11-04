@@ -1,0 +1,206 @@
+ @charset "UTF-8";
+
+ @import url('https://fonts.googleapis.com/css2? family= Bebas+Neue & display=swap');
+ @font-face {
+     font-family:'Bodoni';
+     src: url('..//fontes/BodoniXT.ttf') format('truetype');
+ }
+ @font-face {
+     font-family: 'Android';
+     src: url('../fontes/idroid.otf') format('opentype');
+ }
+
+ :root {
+     --cor00: white;
+     --cor01: #85FFF1;
+     --cor02: #38FFE7;
+     --cor03: #2DCCB9;
+     --cor04: #1C8074;
+     --cor05: #428078;
+
+     --fonte-padrao:Arial, Verdana, Helvetica, sans-serif;
+     --fonte-destaque: 'Bebas Neue', cursiva;
+     --fonte-android2: 'Android';
+     --fonte-android: 'Bodoni';
+ }
+ 
+ *{
+     margin: 0px;
+     padding: 0px;
+ }
+
+ body{
+     background-color: var(--cor01);
+     font-family: var(--fonte-padrao);
+ }
+
+ p{
+     margin: 15px 0px; 
+     text-align: justify;
+     text-indent: 30px;
+     line-height: 2em;
+  }
+  
+  a.externo::after{
+    content: '\1F517';
+  }
+
+ header{
+     background-image: linear-gradient(to bottom, var(--cor03), var(--cor05));
+     min-height: 150px;
+     text-align: center; 
+     padding-top: 40px;
+
+ }
+
+ header > h1{
+     color: white;
+     font-family: var(--fonte-destaque);
+     font-size: 3em;
+     font-weight: normal;
+     margin-bottom: 20px;
+     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.432);
+ }
+ 
+ header > p {
+     font-family: var(--fonte-padrao);
+     font-size: 1.2em;
+     text-align: center;
+     max-width: 500px;
+     margin:auto;
+     padding-left: 10px;
+     padding-right: 10px;
+     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.432);
+     color:white
+ }
+
+ nav{
+     background-color: var(--cor05);
+     padding: 10px;
+     box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.479);
+     
+ }
+ nav > a{
+     color: white;
+     padding: 10px;
+     border-radius: 5px;
+     text-decoration: none;
+     font-weight: bold;
+ }
+ nav > a:hover{
+     background-color: var(--cor03);
+ }
+
+ main {
+     background-color: white;
+     margin: auto;
+     margin-bottom: 30px;
+     padding: 20px;
+     min-width: 300px;
+     max-width: 1000px;
+     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.397);
+     border-bottom-left-radius: 10px;
+     border-bottom-right-radius: 10px;
+ }
+
+ main > img{
+     width: 100%;
+ }
+
+ main strong{
+     color: var(--cor04);
+     font-weight: bold; 
+}
+
+ main a{
+     text-decoration: none;
+     font-weight: bold;
+     color: var(--cor04);
+     background-color: var(--cor01);
+     padding: 2px 6px;
+}
+ main a:hover{
+     text-decoration: underline;
+     color: var(--cor04);
+}
+ 
+ div.video{
+     background-color: var(--cor04);
+     margin: 0px -20px 30px -20px;
+     padding: 20px;
+     padding-bottom: 57%;
+     position:relative
+ }
+
+ div.video > iframe{
+     position: absolute;
+     top: 5%;
+     left: 5%;
+     width: 90% ;
+     height: 90%;
+ }
+
+ article > h1{
+     color: var(--cor03);
+     font-family:var(--fonte-android2);
+     font-weight: normal;
+     font-size: 1.8em;
+    
+ }
+
+ article > h2{
+     color:var(--cor04);
+     font-family: var(--fonte-android2);
+     font-size: 1.3em;
+     font-weight: normal;
+     background-image: linear-gradient(to right, var(--cor01), transparent);
+     text-indent: 8px;
+ }
+ 
+ article > img.pequena  {
+     max-width: 350px;
+     display: block;
+     margin: auto;
+ }
+
+ aside{
+     background-color: var(--cor01);
+     padding: 10px;
+     border-radius: 10px;
+ }
+ aside > ul{
+     list-style-type: '\2714\00A0\00A0';
+     list-style-position: inside;
+     columns: 2;
+ }
+ aside > h3{
+     background-color: #428078;
+     color: white;
+     padding: 8px;
+     margin: -10px -10px 0px -10px;
+     border-radius: 10px 10px 0px 0px;
+
+
+ }
+
+ footer{
+     background-color: var(--cor05);
+     color: white;
+     
+ }
+ footer > p{
+     text-align: center;
+     font-size: 0.8em;
+     padding: 5px;
+ }
+ 
+ footer  a{
+     color: black;
+     font-weight: bolder;
+     text-decoration: none;
+ }
+ footer a:hover{
+     background-color: var(--cor01);
+     color:var(--cor04);
+     text-decoration: underline;
+ }
